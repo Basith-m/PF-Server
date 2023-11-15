@@ -8,5 +8,5 @@ router.post('/user/register',userController.register)
 
 // login API
 
-
+router.post('/user/login',userController.login)
 module.exports = router
