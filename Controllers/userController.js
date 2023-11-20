@@ -42,7 +42,7 @@ exports.login = async(req,res) => {
             }) 
         }
         else{
-            res.status(406).json("Incorrect emai or password") 
+            res.status(406).json("Incorrect email or password") 
         }
     }
     catch(err) {
