@@ -54,7 +54,7 @@ exports.login = async(req,res) => {
 
 exports.editUser = async (req,res) => {
    const userId = req.payload
-   const {username,email,password,github,linkedin,profile} = rq.body
+   const {username,email,password,github,linkedin,profile} = req.body
    const uploadImage = req.file?req.file.filename:profile
 
    try{
